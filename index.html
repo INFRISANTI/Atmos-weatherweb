@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Vollkorn:wght@400;700&display=swap" rel="stylesheet">
+    <title>Atmos</title>
+</head>
+<body>
+    <!-- SEARCH BAR -->
+    <div class="weather-container">
+        <h1>Atmos</h1>
+        <div class="search-bar">
+            <input type="text" id="location" placeholder="Insert location here">
+            <button class="searchButton">Search</button>
+        </div>
+          <!-- LOADING INDICATOR -->
+          <div id="loading-indicator" style="display: none;">
+            <span class="loader"></span>
+        </div>
+    </div>
+
+    <!-- WEATHER DASHBOARD -->
+    <div class="weather-dashboard" style="display: none;">
+        <!-- TODAY'S WEATHER -->
+        <div class="current-weather">
+            <div class="column-status">
+                <div id="cityname-label"></div>
+                <img src="icons/clouds.png" class="icon">
+                <div class="weather-label"><b>Cloudy</b></div>
+                <div id="temperature-label"></div>
+                <div class="humidity-label"></div>
+                <div class="wind"></div>
+            </div>
+        </div>
+
+
+        <!-- WEEKLY WEATHER FORECAST -->
+        <div class="day-container">
+            <!-- day 1 -7-->
+            <div class="day">
+                <div class="dayname"></div>
+                <img class="icon">
+                <div class="temperatureday"></div>
+                <div class="description"></div>
+                <div class="humidity"></div>
+                <div class="wind"></div>
+            </div>
+            <div class="day">
+                <div class="dayname"></div>
+                <img class="icon">
+                <div class="temperatureday"></div>
+                <div class="description"></div>
+                <div class="humidity"></div>
+                <div class="wind"></div>
+            </div>
+            <div class="day">
+                <div class="dayname"></div>
+                <img class="icon">
+                <div class="temperatureday">36°C</div>
+                <div class="description">Cloudy</div>
+                <div class="humidity">Humidity: 60%</div>
+                <div class="wind">Wind speed: 6.2 km/h</div>
+            </div>
+            <div class="day">
+                <div class="dayname">Day 4</div>
+                <img class="icon">
+                <div class="temperatureday"></div>
+                <div class="description"></div>
+                <div class="humidity"></div>
+                <div class="wind"></div>
+            </div>
+            <div class="day">
+                <div class="dayname">Day 5</div>
+                <img class="icon">
+                <div class="temperatureday"></div>
+                <div class="description"></div>
+                <div class="humidity"></div>
+                <div class="wind"></div>
+            </div>
+            <div class="day">
+                <div class="dayname"></div>
+                <img class="icon">
+                <div class="temperatureday"></div>
+                <div class="description"></div>
+                <div class="humidity"></div>
+                <div class="wind"></div>
+            </div>
+            <div class="day">
+                <div class="dayname"></div>
+                <img class="icon">
+                <div class="temperatureday"></div>
+                <div class="description"></div>
+                <div class="humidity"></div>
+                <div class="wind"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
